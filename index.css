@@ -1,0 +1,89 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    display: flex;
+    margin: 1rem 10rem;
+    align-items: center;
+    flex-direction: column;
+}
+.container h1 {
+    color: #0033a1;
+    font-weight: 500;
+}
+.container form {
+    border: 1px dotted #0033A1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    width: 500px;
+    max-width: 800px;
+    height: 200px;
+    justify-content: space-evenly;
+    background-color: #f2f2f2;
+}
+
+form > div {
+    padding: 2px 10px;
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    margin: 2px;
+    justify-content: center;
+}
+label {
+    color: #00000080;
+    font-size: 20px;
+    font-weight: bold;
+}
+input[type=text] {
+    height: 26px;
+    padding: 4px;
+    border-radius: .4rem;
+    outline: none;
+    border: none;
+}
+input[type=text]:focus {
+    border: 1px solid #0033a1;
+}
+input[type=submit] {
+    height: 40px;
+    font-size: 30px;
+    font-weight: 500;
+}
+input[type=submit]:hover {
+    color: #0033a1;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.container > div {
+    width: 400px;
+    margin: 10px 0;
+}
+ol li {
+    background-color: #f2f2f2;
+    margin: 8px 0;
+    font-size: 20px;
+}
+
+ol li:nth-child(even) {
+    list-style-image: url('https://images.unsplash.com/photo-1641154706848-fe27fd366032?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8dG9kb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=24&q=60');
+}
+
+small {
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+      margin: 1rem;
+    }
+  }
+
